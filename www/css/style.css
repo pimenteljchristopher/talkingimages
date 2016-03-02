@@ -1,0 +1,55 @@
+/* Empty. Add your own CSS if you like */
+
+
+.president-profile{
+   width: 100%;
+   height: 100%;
+   background-color: #ff3232;
+   text-align: center;
+   padding: 10%;
+   padding-bottom: 5%;
+   
+}
+.president-profile h4,h5{
+	color: #f2f2f2 !important;
+}
+
+.president-profile img{
+
+	width:  150px;
+	height: 150px;
+	border:1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+.info span{
+    color: #ff3232;
+    font-size: 13px;
+}
+
+.vicepresident-profile{
+	 width: 100%;
+   height: 100%;
+}
+
+.vicepresident-profile img{
+
+	width:  150px;
+	height: 150px;
+	border:1px solid white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+
+.dashboardTextarea{
+	width: 100%;
+	height:200px;
+	border-radius: 2px;
+	border: 1px solid #ff0000;
+}
+
+.item-note{
+	color:	#ff0080;
+}

@@ -1,0 +1,16 @@
+<ion-view view-title="Platform">
+  <ion-content class="padding">
+      <textarea class="dashboardTextarea" ng-model="information"></textarea>
+      <button ng-click="pushInformation(information)" class="button button-full button-positive"><i class="icon ion-ios-analytics"></i>
+      Analyze</button> 
+      <ion-list>
+        <ion-item ng-show="data.word_count">Words: <span ng-bind="data.word_count"></span></ion-item>
+        <ion-item ng-repeat = "tree in data.tree.children[0].children[0].children">
+          {{tree.name}} <span class="item-note"> <span ng-class="ion-android-happy">{{Math.round(tree.percentage * 100)}} %</span>
+        </ion-item>
+        <ion-item>
+
+        </ion-item>
+      </ion-list>
+  </ion-content>
+</ion-view>

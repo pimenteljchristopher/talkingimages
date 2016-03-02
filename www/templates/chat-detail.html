@@ -1,0 +1,35 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="View Profile">
+  <ion-content >
+  <div class="president-profile">
+
+    <img ng-src="{{chat.president.picture}}" >
+      <h4>{{chat.president.name}}</h4>
+      <h5>{{chat.president.position}}</h5>
+  </div>
+    <ion-list>
+     <ion-item><div class="info"><span>Platform </span><h4>{{chat.president.platform}}</h4></div></ion-item>
+      <ion-item><div class="info"><span>Birthday</span> <h4>{{chat.president.age}}</h4></div></ion-item>
+      <ion-item><div class="info"><span>Partylist</span><h4> {{chat.president.party}}</h4></div></ion-item>
+      <ion-item>
+      <div class="vicepresident-profile">
+       <div class="info"><span>Vice president</span></div>
+        <img ng-src="{{chat.vicepresident.picture}}" >
+         <h4>{{chat.vicepresident.name}}</h4>
+         <h4>{{chat.vicepresident.position}}</h4>
+      </div>
+      </ion-item>
+      <ion-item><div class="info"><span>Platform</span> <h4>{{chat.vicepresident.platform}}</h4></div></ion-item>
+      <ion-item><div class="info"><span>Birthday</span> <h4>{{chat.vicepresident.age}}</h4></div></ion-item>
+      <ion-item><div class="info"><span>Birthday</span> <h4>{{chat.vicepresident.party}}</h4></div></ion-item>
+
+    
+      
+    </ion-list>
+  </ion-content>
+</ion-view>
