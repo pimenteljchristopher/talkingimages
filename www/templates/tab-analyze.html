@@ -1,0 +1,87 @@
+<ion-view view-title="Analyze">
+  <style>
+  .container {
+  	background-color: #303F9F;
+  	width: 100%;
+  	height: 100% !important;
+  }
+  .img{
+  	height: 65%;
+  	width:100%;
+  	background-color: gray;
+  }
+  .img img{
+    width:100%;
+    height:100%;
+  }
+  .container-photo{
+
+  	text-align:center;
+  }
+  .take-photo{
+  	margin: 5px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	padding-left: 25px;
+  	padding-right: 25px;
+  	background-color: #3f51b5;
+  	color: white;
+  	font-weight: bold;
+
+  	border-radius: 15px;
+  }
+  .message{
+  	width: 100%;
+  	height: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 15px;
+    font-size: 15px;
+
+  	background-color: white;
+  }
+  .take-photo:hover{
+  	color: white;
+  }
+  .take-photo:active{
+  	background-color: #3f51b5;
+  }
+  </style>
+  <ion-content scroll ="false" class="container">
+        <ion-scroll zooming="false" direction="y " style="width: 100%; height: 400px">
+      		<div class="img">
+      		  <img id="myImage" class="myImage" src="../img/cars.jpg" ng-click="analyzephoto('cars.jpg')"></img>
+          </div>
+            <div class="img">
+            <img id="myImage" class="myImage" src="../img/garlic.jpg" ng-click="analyzephoto('garlic.jpg')"></img>
+          </div>
+          <div class="img">
+            <img id="myImage" class="myImage" src="../img/mug.jpg" ng-click="analyzephoto('mug.jpg')"></img>
+          </div>
+          <div class="img">
+            <img id="myImage" class="myImage" src="../img/people.jpg" ng-click="analyzephoto('people.jpg')"></img>
+          </div>
+          <div class="img">
+            <img id="myImage" class="myImage" src="../img/adam.jpg" ng-click="analyzephoto('adam.jpg')"></img>
+      		</div>
+           <div class="img">
+            <img id="myImage" class="myImage" src="../img/monkey.jpg" ng-click="analyzephoto('monkey.jpg')"></img>
+          </div>
+           <div class="img">
+            <img id="myImage" class="myImage" src="../img/garden.jpg" ng-click="analyzephoto('garden.jpg')"></img>
+          </div>
+        </ion-scroll>
+        <div style="width: 100%; height:100%;">
+      		<div id="message" class="message" >
+      		{{message}}
+      		</div>
+          <div>
+            <audio preload="auto" src= "" controls id="playerAudio" preload="none" style="height:15px; width:100%; padding:10px 0xp 10px 0px; ">
+            </audio> 
+          </div>         
+      		<div class="container-photo">
+      		    <button class="button take-photo" ng-click="takephoto()">TAKE PHOTO</button>   
+      		</div>
+        </div>
+  </ion-content>
+</ion-view>

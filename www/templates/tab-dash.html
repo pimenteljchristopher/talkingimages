@@ -3,6 +3,8 @@
       <textarea class="dashboardTextarea" ng-model="information"></textarea>
       <button ng-click="pushInformation(information)" class="button button-full button-positive"><i class="icon ion-ios-analytics"></i>
       Analyze</button> 
+       <audio preload="auto" src= "" controls id="playerAudio" preload="none" style="height:15px; width:100%; padding:10px 0xp 10px 0px; ">
+            </audio> 
       <ion-list>
         <ion-item ng-show="data.word_count">Words: <span ng-bind="data.word_count"></span></ion-item>
         <ion-item ng-repeat = "tree in data.tree.children[0].children[0].children">

@@ -26,6 +26,21 @@ angular.module('starter.services', [])
       
     };
 
+    this.analyze = function(result){
+   console.log(result);
+       return $http.post('http://localhost:5000/recognition',result).success(function(data) {
+              return data.data;
+            })
+            .error(function(data) {
+                console.log('Error: ' + data);
+            });
+    };
+    this.talk = function(result){
+   console.log(result);
+       return $http.post('http://localhost:5000/textspeech',result).success(function(data){
+        return data;
+       });
+    };
     this.rememberPresidential = function(json){
       console.log(json);
       presidential =json;
